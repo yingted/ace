@@ -1,0 +1,19 @@
+## Natural deduction
+snippet d{
+	disprove ${1} {
+		${2}
+		false by not_e on 
+	}
+	!(${1}) by raa on 
+snippet a{
+	assume ${1} {
+		${2}
+	}
+	${1} => ${2} by imp_i on 
+## Z
+snippet s{
+	schema ${1} begin
+		${2}
+	pred
+		${3}
+	end
